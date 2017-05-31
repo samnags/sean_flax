@@ -254,8 +254,11 @@ input[type=submit]:hover {
 
 
 /* Small tablet to big tablet: from 768px to 1023px */
-@media only screen and (max-width: 1023px) {
-   
+
+@media only screen and (min-width: 1000px) {
+   .about {
+      height: 80vh;
+    }
 }
 
 @media only screen and (max-width: 925px) {
@@ -275,7 +278,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 901px) {
   .about {
-    height: 100vh;
+    height: 60vh;
   }
   
   .icons {
@@ -294,6 +297,10 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 808px) {
+    .about {
+      height: 70vh;
+    }
+
     .hero-box h1 {
       font-size: 175%;
     }
@@ -315,15 +322,17 @@ input[type=submit]:hover {
     }
 }
 
-@media only screen and (max-width: 650px) {
-  .hero-box h1 {
+@media only screen and (max-width: 680px) {
+    .hero-box h1 {
       font-size: 105%;
       padding-bottom: 20%;
     }
 
     .hero-box-text {
+      padding-top: 5%;
       font-size: 90%;
     } 
+    
 }
 
 @media only screen and (max-width: 587px) {
@@ -345,7 +354,7 @@ input[type=submit]:hover {
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  /*.nav {
-    display: none;
-  }*/
+  .about {
+    height: 100vh;
+  }
 }

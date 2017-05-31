@@ -129,7 +129,7 @@ nav a:hover {
 /* -----------------------------  */
 
 .about {
-  height: 90vh;
+  height: 100vh;
   text-align: justify;
 }
 
@@ -275,7 +275,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 901px) {
   .about {
-    height: 60vh;
+    height: 100vh;
   }
   
   .icons {
@@ -328,7 +328,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 587px) {
   .hero-box h1 {
-    padding-bottom: 5%;
+    padding-bottom: 30%;
   }
   
   /*.hero-box-text {

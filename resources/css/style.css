@@ -1,0 +1,345 @@
+/* -----------------------------  */
+/* REUSABLE COMPONENTS */
+/* -----------------------------  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+html {
+  background-color: #fff;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 20px;  
+  text-rendering: optimizeLegibility;
+}
+
+section {
+  padding-top: 80px;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;    
+}
+
+h1 {
+    margin-top: 0;    
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.icon {
+  display: inline-block;
+  /*padding-top: 50%;*/
+  padding-left: 95px;
+  padding-top: 20%;
+}
+
+.icon-big {
+    font-size: 325%;
+    
+    /*padding: 30px 0px 50px 0; */
+    
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
+    /*margin-top: 30px;*/
+}
+
+/* -----------------------------  */
+/* NAV */
+/* -----------------------------  */
+header {
+  height: 90vh;
+}
+
+nav ul {  
+  text-align: center;
+  list-style: none; 
+  padding: 20px 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 50px 8px;  
+}
+
+nav a {
+ border-bottom: solid 2px transparent;
+ transition: border-bottom .5s ease-in;
+}
+
+nav a:hover {
+  border-bottom: solid 2px;  
+}
+
+/* -----------------------------  */
+/* HEADER */
+/* -----------------------------  */
+.hero-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 250%;
+  font-weight: 100;
+  /*background-color: green;*/
+  /*padding-bottom: 25%;*/
+}
+
+.hero-box-text {  
+  font-size: 150%;
+  /*background-color: red;*/
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  /*display: inline-block;*/
+}
+
+/* -----------------------------  */
+/* ABOUT */
+/* -----------------------------  */
+
+.about {
+  height: 80vh;
+  text-align: justify;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 300%;
+  padding-bottom: 5%;
+}
+
+.about p {
+  line-height: 1.5;
+}
+
+/* -----------------------------  */
+/* PORTFOLIO */
+/* -----------------------------  */
+.portfolio h2 {
+  text-align: center;
+  font-size: 300%;
+  padding-bottom: 5%;
+}
+
+.portfolio h3 {
+  padding-bottom: 15px;
+}
+
+.portfolio p {
+  line-height: 1.25;
+  width: 90%;
+  padding-bottom: 25px;
+  text-align: justify;
+  /*width: 225px;*/
+}
+
+.portfolio img {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+.caption {
+  width: 100%;
+}
+
+/* -----------------------------  */
+/* CONTACT */
+/* -----------------------------  */
+.contact h2 {
+  text-align: center;
+  font-size: 300%;
+  padding-bottom: 5%;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 10px;    
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 60%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 100%;
+    font-weight: 100;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    font-size: 90%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    /*-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+}
+
+input[type=submit]:hover {
+  border-color: #22313F;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.form-messages {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.success {
+  background-color: #26bf44;
+}
+
+.error {
+  background-color: red;
+}
+
+/* -----------------------------  */
+/* MEDIA QUERIES */
+/* -----------------------------  */
+
+@media only screen and (min-width: 1200px) {
+   
+}
+
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+   
+}
+
+@media only screen and (max-width: 925px) {
+   .row {
+     padding: 0 10px;
+   }
+
+   .hero-box h1 {
+    font-size: 200%;
+   }
+
+   .icons {
+     margin: 0;
+   }
+
+}
+
+@media only screen and (max-width: 901px) {
+  .about {
+    height: 60vh;
+  }
+  
+  .icons {
+    display: none;
+  }
+
+  .bio {
+    width: 95%;
+  }
+
+  .hero-box-text {
+    font-size: 125%;
+  }
+
+
+}
+
+@media only screen and (max-width: 808px) {
+    .hero-box h1 {
+      font-size: 175%;
+    }
+
+    .hero-box-text {
+      font-size: 100%;
+    }
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 740px) {
+    .hero-box h1 {
+      font-size: 150%;
+    }
+
+    .hero-box-text {
+      font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+  .hero-box h1 {
+      font-size: 105%;
+    }
+
+    .hero-box-text {
+      font-size: 90%;
+    } 
+}
+
+@media only screen and (max-width: 587px) {
+  .hero-box-text {
+    font-size: 80%
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  nav li {    
+    padding: 0 10px;  
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  /*.nav {
+    display: none;
+  }*/
+}

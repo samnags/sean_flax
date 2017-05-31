@@ -253,6 +253,20 @@ input[type=submit]:hover {
   background-color: red;
 }
 
+.back {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.back a {
+  border-bottom: solid 2px transparent;
+  transition: border-bottom .5s ease-in;
+}
+
+.back a:hover {
+  border-bottom: solid 2px;  
+}
+
 /* -----------------------------  */
 /* MEDIA QUERIES */
 /* -----------------------------  */

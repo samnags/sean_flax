@@ -19,6 +19,7 @@ html {
 
 section {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .row {
@@ -75,7 +76,7 @@ h1 {
 /* NAV */
 /* -----------------------------  */
 header {
-  height: 90vh;
+  height: 100vh;
 }
 
 nav ul {  
@@ -96,6 +97,10 @@ nav a {
 
 nav a:hover {
   border-bottom: solid 2px;  
+}
+
+h2 {
+  padding-bottom: 5%;
 }
 
 /* -----------------------------  */
@@ -129,7 +134,7 @@ nav a:hover {
 /* -----------------------------  */
 
 .about {
-  height: 100vh;
+  
   text-align: justify;
 }
 
@@ -163,13 +168,13 @@ nav a:hover {
 .portfolio p {
   line-height: 1.25;
   width: 90%;
-  padding-bottom: 25px;
+  padding-bottom: 5%;
   text-align: justify;
   /*width: 225px;*/
 }
 
 .portfolio img {
-  padding-bottom: 10px;
+  padding-top: 10%;
   padding-left: 5px;
   padding-right: 5px;
   width: 100%;
@@ -183,7 +188,7 @@ nav a:hover {
 /* CONTACT */
 /* -----------------------------  */
 .contact {
-  padding: 0 1.5% 5%;
+  padding: 10% 1.5% 5%;
   /*padding-bottom: 5%;*/
   
 }
@@ -266,7 +271,7 @@ input[type=submit]:hover {
 
 @media only screen and (min-width: 1000px) {
    .about {
-      height: 80vh;
+      /*height: 80vh;*/
     }
 }
 
@@ -287,7 +292,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 901px) {
   .about {
-    height: 60vh;
+    /*height: 60vh;*/
   }
   
   .icons {
@@ -307,7 +312,8 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 808px) {
     .about {
-      height: 70vh;
+      /*height: 100vh;*/
+      /*padding-bottom: 10%;*/
     }
 
     .hero-box h1 {
@@ -341,12 +347,17 @@ input[type=submit]:hover {
       padding-top: 5%;
       font-size: 90%;
     } 
+
+    .hero-box-text span {
+      /*display: inline-block;*/
+      line-height: 1.5;
+    }
     
 }
 
 @media only screen and (max-width: 587px) {
   .hero-box h1 {
-    padding-bottom: 30%;
+    padding-bottom: 50%;
   }
   
   /*.hero-box-text {
@@ -363,11 +374,16 @@ input[type=submit]:hover {
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  .about {
-    height: 100vh;
+  .form {
+    text-align: center;
   }
 
-  .portfolio p {
-    padding-bottom: 10%;
+  .form .span-1-of-3 {
+    padding: 10px 0 10px; 
+  }
+
+@media only screen and (max-width: 370px) {
+  .hero-box h1 {
+    padding-bottom: 100%;
   }
 }

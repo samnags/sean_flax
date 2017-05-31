@@ -31,7 +31,7 @@
         </div>
 
         <div class="hero-box-text row">
-            Director. Producer. Journalist.
+            <span>Director. </span><span>Producer. </span><span>Journalist. </span>
         </div>
 
     </header>
@@ -110,7 +110,7 @@
         <h2>Contact</h2>
          <div class="row" id="form">             
             <form method="post" action="mailer.php" class="contact-form">
-                <div class="row">
+                <!--<div class="row">
                         <?php
                             if($_GET['success'] == 1) {
                                 echo "<div class=\"form-messages success\">Thank you your message has been sent</div>";
@@ -120,42 +120,45 @@
                             }
                             
                         ?>
-            </div>
+            </div>-->
         </div>
-            <div class="row">                        
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
+            <div class="form">
+                <div class="row">                        
+                     <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
                             <input type="text" name="name" id="name" placeholder="Your name" required>
                         </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>                                    
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop me a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
-                        </div>
+                     <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
+                </div>                                    
+
+                <div class="row">
+                  <div class="col span-1-of-3">
+                        <label>Drop me a line</label>
                     </div>
-                    
-                </form>            
+                    <div class="col span-2-of-3">
+                      <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+                </form>                            
+            </div>
     </section>
 
     <script src="vendors/js/jquery-3.2.1.min.js"></script>

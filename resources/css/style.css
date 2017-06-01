@@ -195,8 +195,10 @@ h2 {
   font-weight: bold;
 }
 
+
 .email span {
-  padding: 0 30px;
+  padding: 5px 30px;
+  display: block;
 }
 .contact h2 {
   text-align: center;

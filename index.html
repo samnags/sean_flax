@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">            
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">            
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">   
-    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
              
     <title>Sean Flax</title>
 </head>
@@ -26,21 +27,25 @@
             </div>                     
         </nav>
 
-        <div class="hero-box row">
-            <h1>Sean Flax</h1>                
+        <div class="row">
+            <div class="hero-box">
+                <h1>Sean Flax</h1>
+            </div>
+
+            <div class="hero-box-text">
+                <h2>Award-Winning Producer / Entrepreneur</h2>
+            </div>                                        
+
         </div>
 
-        <div class="hero-box-text row">
-            <span>Director. </span><span>Producer. </span><span>Journalist. </span>
-        </div>
-
+        
     </header>
 
     <section id="about" class="about">
         <div class="row">
             <h2>About</h2>
             <div class="col span-2-of-4 bio">
-                <p>Sean is an award-winning director/producer and entrepreneur. He has worked for multinational publishers including the BBC, NPR, Eurovision, NHK, and Time Warner Cable (Spectrum) - where his content was seen by millions of viewers. Since leaving journalism, Sean has co-founded two media startups, and his independent work has appeared on NBC Sports Network, CBS Sunday Morning, USA Today, New York Magazine, Sports Illustrated and many other broadcast and digital platforms.</p>  <br><p>Sean is based in New York City, where he was born, and graduated from the University of Michigan.</p>                          
+                <p>Sean is an award-winning producer and entrepreneur. He has worked for multinational publishers including the BBC, NPR, Eurovision, NHK, and Time Warner Cable (Spectrum) - where his content was seen by millions of viewers. Since leaving journalism, Sean has co-founded two media startups, and his independent work has appeared on NBC Sports Network, CBS Sunday Morning, USA Today, New York Magazine, Sports Illustrated and many other broadcast and digital platforms.</p>  <br><p>Sean is based in New York City, where he was born, and graduated from the University of Michigan.</p>                          
             </div>
 
             <div class="col soan-2-of-4 icons">
@@ -55,7 +60,9 @@
         <h2>Portfolio</h2>
         <div class="row">            
             <div class="col span-1-of-3">
-                <a href="http://www.nbcsports.com/video/matt-tiffts-journey-rising-star-nascar" target=_blank><img src="resources/images/matttifft-web.jpeg" alt="Matt Tifft's triumphant return to racing"></a>
+                <div class="portfolio border">
+                    <a href="http://www.nbcsports.com/video/matt-tiffts-journey-rising-star-nascar" target=_blank><img src="resources/images/matttifft-web.jpeg" alt="Matt Tifft's triumphant return to racing"></a>
+                </div>
                 <div class="caption">
                     <h3>BACK TO TRACK: THE MATT TIFFT STORY</h3>
                     <p>An NBC Sports Network documentary on 20 year-old NASCAR driver Matt Tifft, who had a brain tumor removed and is now using his triumphant return to racing to help others.<p>
@@ -108,57 +115,13 @@
 
     <section id="contact" class="contact">
         <h2>Contact</h2>
-         <div class="row" id="form">             
-            <form method="post" action="mailer.php" class="contact-form">
-                <!--<div class="row">
-                        <?php
-                            if($_GET['success'] == 1) {
-                                echo "<div class=\"form-messages success\">Thank you your message has been sent</div>";
-                            }
-                            if($_GET['success'] == - 1) {
-                                echo "<div class=\"form-messages error\">Something went wrong! Please try again.</div>"; 
-                            }
-                            
-                        ?>
-            </div>-->
-        </div>
-            <div class="form">
-                <div class="row">                        
-                     <div class="col span-1-of-3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                </div>
-
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                     <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </div>
-                </div>                                    
-
-                <div class="row">
-                  <div class="col span-1-of-3">
-                        <label>Drop me a line</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                      <textarea name="message" placeholder="Your message"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Send it!">
-                    </div>
-                </div>
-                </form>                            
+         <div class="email row">             
+            <div class="col span-1-of-2">
+                Endless Roots Media
             </div>
+            <div class="col span-1-of-2">
+                info@endlessroots.tv
+            </div>            
     </section>
 
     <div class="back row">

@@ -77,32 +77,48 @@ h1 {
 /* -----------------------------  */
 header {
   height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/sf-site-1.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff 
 }
 
 nav ul {  
   text-align: center;
   list-style: none; 
   padding: 20px 0;
+  
 }
 
 nav li {
   display: inline-block;
-  padding: 0 50px 8px;  
+  padding: 0 50px 8px;    
 }
 
 nav a {
  border-bottom: solid 2px transparent;
- transition: border-bottom .5s ease-in;
+ transition: border-bottom .5s ease-in; 
+ color: #fff
 }
 
 nav a:hover {
   border-bottom: solid 2px;  
 }
 
-h2 {
-  /*padding-bottom: 5%;*/
-}
+/*.mySlides {
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
 
+
+
+
+/*background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
 /* -----------------------------  */
 /* HEADER */
 /* -----------------------------  */

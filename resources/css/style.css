@@ -112,9 +112,6 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 200%;
-  /*font-weight: 100;*/
-  /*background-color: green;*/
-  /*padding-bottom: 25%;*/
 }
 
 .hero-box-text {  
@@ -134,7 +131,18 @@ h2 {
 /* -----------------------------  */
 
 .about {
+  position: relative;  
   text-align: justify;
+  height: 80vh;
+}
+
+.bio {
+  
+  /*font-size: 200%;*/
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about h2 {

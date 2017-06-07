@@ -121,13 +121,14 @@ nav a:hover {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
+    /*background: no-repeat;*/
     opacity: 0;
     z-index: 0;
     animation: imageAnimation 30s linear infinite 0s; 
 }
 
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/sf-site-1.jpg) 
+    background-image: url(../images/sf-site-1.jpg);
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../images/sf-site-2.png);
@@ -333,10 +334,6 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 901px) {
-  .about {
-    /*height: 60vh;*/
-  }
-  
   .icons {
     display: none;
   }
@@ -399,14 +396,14 @@ nav a:hover {
   
 
 /* Small phones: from 0 to 480px */
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
   .form {
     text-align: center;
   }
 
   .form .span-1-of-3 {
     padding: 10px 0 10px; 
-  }
+  }*/
 
 @media only screen and (max-width: 420px) {
   .hero-box-text {

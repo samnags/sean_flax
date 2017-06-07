@@ -129,7 +129,7 @@ nav a:hover {
 }
 
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/sf-site-1.jpg);
+    background-image: url(../images/sf-site-4.jpg);
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../images/sf-site-2.png);
@@ -139,8 +139,8 @@ nav a:hover {
     background-image: url(../images/sf-site-3.png);
     animation-delay: 12s; 
 }
-.cb-slideshow li:nth-child(4) span { 
-    background-image: url(../images/sf-site-4.jpg);
+.cb-slideshow li:nth-child(4) span {     
+    background-image: url(../images/sf-site-1.jpg);
     animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
@@ -192,11 +192,10 @@ nav a:hover {
 .about {
   position: relative;  
   text-align: justify;
-  height: 80vh;
+  height: 100vh;
 }
 
-.bio {
-  
+.bio {  
   /*font-size: 200%;*/
   position: absolute;
   top: 58%;
@@ -225,7 +224,6 @@ nav a:hover {
 .portfolio h2 {
   text-align: center;
   font-size: 300%;
-  padding-bottom: 5%;
 }
 
 .portfolio h3 {
@@ -377,8 +375,9 @@ nav a:hover {
   .hero-box h1 {
     padding-bottom: 50%;
   }
-  
+
   .about {  height: 100vh; }
+  
   nav li {    
     padding: 0 5px;  
   }

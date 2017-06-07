@@ -78,12 +78,14 @@ nav ul {
   text-align: center;
   list-style: none; 
   padding: 20px 0;
+  z-index: 1;
   
 }
 
 nav li {
   display: inline-block;
-  padding: 0 50px 8px;    
+  padding: 0 50px 8px;  
+  color: #fff;  
 }
 
 nav a {
@@ -103,7 +105,7 @@ nav a:hover {
     height: 100vh;
     top: 0px;
     left: 0px;
-    z-index: 0; 
+    z-index: -1; 
 }
 
 .cb-slideshow:after { 
@@ -120,10 +122,9 @@ nav a:hover {
     color: transparent;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: none;
-    /*background: no-repeat;*/
+    background-repeat: none;    
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
     animation: imageAnimation 30s linear infinite 0s; 
 }
 
@@ -160,18 +161,6 @@ nav a:hover {
 	opacity: 1;
 }
 
-/*.mySlides {
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}*/
-
-
-
-
-/*background-size: cover;
-    background-position: center;
-    height: 100vh;
     
 /* -----------------------------  */
 /* HEADER */

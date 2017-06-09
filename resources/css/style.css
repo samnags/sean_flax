@@ -72,8 +72,11 @@ h1 {
 header {
   height: 100vh;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg); 
-  background-size: cover;       /* scales image as large as possible with keeps aspect ratio */
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg); 
+  background-size: cover;  
   background-position: center;
   background-attachment: fixed;
 }

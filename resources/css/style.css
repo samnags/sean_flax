@@ -69,16 +69,17 @@ h1 {
 /* -----------------------------  */
 /* NAV */
 /* -----------------------------  */
-header {
-  height: 100vh;
+header {  
   color: #fff;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
+  /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
   background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg); 
-  background-size: cover;  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/sf-site-4.jpg);
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  height: 100vh;
+  background-attachment: fixed; 
 }
 
 nav ul {  

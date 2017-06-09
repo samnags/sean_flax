@@ -71,27 +71,30 @@ h1 {
 /* -----------------------------  */
 header {  
   color: #fff;
-  /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg); 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/sf-site-4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
-  background-attachment: fixed; 
-  
-  */
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg) no-repeat center center fixed; */
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
-
-
+  background-size: cover;  */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg); 
 }
+
+header img {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
 nav ul {  
   text-align: center;
@@ -426,3 +429,10 @@ nav a:hover {
     font-size: 70%;
     padding-top: 30%;    
   }
+
+  /*@media screen and (max-width: 1024px) { 
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   
+  }
+}*/

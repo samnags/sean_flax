@@ -71,7 +71,11 @@ h1 {
 /* -----------------------------  */
 header {
   height: 100vh;
-  color: #fff 
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/sf-site-4.jpg); 
+  background-size: cover;       /* scales image as large as possible with keeps aspect ratio */
+  background-position: center;
+  background-attachment: fixed;
 }
 
 nav ul {  
@@ -98,7 +102,7 @@ nav a:hover {
   border-bottom: solid 2px;  
 }
 
-.cb-slideshow,
+/*.cb-slideshow,
 .cb-slideshow:after { 
     position: absolute;
     width: 100%;
@@ -159,7 +163,7 @@ nav a:hover {
 
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
-}
+}*/
 
     
 /* -----------------------------  */
@@ -329,9 +333,6 @@ nav a:hover {
     width: 95%;
   }
 
-  .hero-box-text {
-    font-size: 50%;
-  }
 }
 
 @media only screen and (max-width: 808px) {
@@ -339,10 +340,10 @@ nav a:hover {
       font-size: 175%;
     }
 
-    .hero-box-text {
-      font-size: 50%;
+    /*.hero-box-text {
+      font-size: 50%;*/
       /*font-weight: 100;*/
-    }
+    /*}*/
     
 }
 
@@ -353,9 +354,9 @@ nav a:hover {
       font-size: 150%;
     }
 
-    .hero-box-text {
+    /*.hero-box-text {
       font-size: 75%;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 680px) {
@@ -364,16 +365,16 @@ nav a:hover {
       /*padding-bottom: 20%;*/
     }
 
-    .hero-box-text {
+    /*.hero-box-text {
       padding-top: 10%;
       font-size: 80%;
-    } 
+    } */
     
 }
 
-@media only screen and (max-width: 587px) {
+@media only screen and (max-width: 630px) {
   .hero-box h1 {
-    padding-bottom: 50%;
+    /*padding-bottom: 50%;*/
   }
 
   .about {  height: 100vh; }
@@ -383,6 +384,11 @@ nav a:hover {
   }
 }
   
+
+@media only screen and (max-width: 586px) {
+  .hero-box h1 {
+    padding-bottom: 20%;
+  }
 
 /* Small phones: from 0 to 480px */
 /*@media only screen and (max-width: 480px) {

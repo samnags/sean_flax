@@ -116,13 +116,59 @@
 
     <section id="contact" class="contact">
         <h2>Contact</h2>
-         <div class="email row">             
-            <!--<div class="col span-1-of-2">-->
-                <span>Endless Roots Media</span><span>info@endlessroots.tv</span>
-            <!--</div>-->
-            <!--<div class="col span-1-of-2">-->
-                
-            <!--</div>            -->
+            <div class="row ">             
+                <div class="col span-1-of-2 email">
+                    <span>Endless Roots Media</span><span><a href="mailto:info@endlessroots.tv?subject=Mail from Site">info@endlessroots.tv</a></span>
+                </div>
+
+            <div id="form" class="col span-1-of-2">
+                <form method="post" action="mailer.php" class="contact-form">
+                <!--<div class="row">
+                        <?php
+                            if($_GET['success'] == 1) {
+                                echo "<div class=\"form-messages success\">Thank you your message has been sent</div>";
+                            }
+                            if($_GET['success'] == - 1) {
+                                echo "<div class=\"form-messages error\">Something went wrong! Please try again.</div>"; 
+                            }
+                            
+                        ?>
+            </div>-->                  
+                    <div class="row">                        
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>                                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop me a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>                
+                </form> 
+            </div>
+        </div>
     </section>
 
     <div class="back row">

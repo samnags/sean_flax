@@ -310,6 +310,60 @@ nav a:hover {
   border-bottom: solid 2px;  
 }
 
+.contact-form {        
+    margin: 0 auto;
+    padding-bottom: 10px;    
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 60%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 100%;
+    font-weight: 100;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    font-size: 90%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    /*-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+}
+
+input[type=submit]:hover {
+  border-color: #22313F;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.form-messages {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.success {
+  background-color: #26bf44;
+}
+
+.error {
+  background-color: red;
+}
+
 /* -----------------------------  */
 /* MEDIA QUERIES */
 /* -----------------------------  */
@@ -411,14 +465,16 @@ nav a:hover {
   }
 
 /* Small phones: from 0 to 480px */
-/*@media only screen and (max-width: 480px) {
-  .form {
+@media only screen and (max-width: 480px) {
+  #form {
+    padding-top: 10%;
     text-align: center;
   }
-
-  .form .span-1-of-3 {
+  
+  #form .span-1-of-3 {
     padding: 10px 0 10px; 
-  }*/
+  }
+}
 
 @media only screen and (max-width: 420px) {
   .hero-box-text {
@@ -432,6 +488,11 @@ nav a:hover {
     padding-top: 30%;    
   }
 
+  /*.form-messages {
+    width: 100%;
+  }*/
+
+}
   /*@media screen and (max-width: 1024px) { 
   img.bg {
     left: 50%;

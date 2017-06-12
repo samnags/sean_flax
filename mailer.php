@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: http://benjaminkushner.com/test.php?success=1#form");
+    header("Location: https://samnags.github.io/sean_flax/index.php?success=1#form");
 
 ?>

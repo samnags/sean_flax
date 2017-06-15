@@ -8,12 +8,12 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://samnags.github.io/sean_flax/index.php?success=-1#form");
+        header("Location: http://seanflax.com/index.php?success=-1#form");
         exit;
     }
 
     // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "sam.nagourney@gmail..com";
+    $recipient = "info@endlessroots.tv";
 
     // Set the email subject.
     $subject = "Email from Site from $name";
@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: https://samnags.github.io/sean_flax/index.php?success=1#form");
+    header("Location: http://seanflax.com/index.php?success=1#form");
 
 ?>

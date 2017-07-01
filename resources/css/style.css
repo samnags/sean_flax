@@ -482,17 +482,27 @@ input[type=submit]:hover {
 @media only screen and (max-width: 430px) {
   .hero-box h1 { font-size: 100%; }
 
-  .hero-box-text { font-size: 45%; }
+  .hero-box-text { 
+    font-size: 45%; 
+    font-size: 50%;
+    width: 375px;
+    text-align: center    
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
   .hero-box h1 {
-    font-size: 90%;
+    font-size: 120%;
     padding-bottom: 10%;
+    width: 375px;
+    text-align: center;
   }
 
-   .hero-box-text {
-    font-size: 35%;    
+   .hero-box-text {       
+    font-size: 50%;
+    width: 375px;
+    text-align: center    
   }
 
   .nav li { font-size: 15px; }  
@@ -500,30 +510,39 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 320px) {
   .hero-box h1 {
-    font-size: 70%;    
+    /*font-size: 70%;  */
+    width: 320px;
+    text-align: center;
+
   }
 
-   .hero-box-text {
-    font-size: 30%;    
+   .hero-box-text {    
+    font-size: 50%;
+    width: 320px;
+    text-align: center    
   }
 
   .nav li { font-size: 15px; }  
 }
 
+@media only screen 
+and (min-device-width : 370px) 
+and (max-device-width : 667px) {  
+  
+  .about { height: 110vh } 
+
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
 {
-    .about {
-        height: 150vh
-    }
+    .about { height: 145vh }
 }
 
 
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-    
-    .hero-box-text { padding-top: 5%;}
+and (min-device-width : 320px) 
+and (max-device-width : 369px) { 
+  
+  .about {height: 130vh }
 
-  }
+}
